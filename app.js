@@ -347,8 +347,8 @@
 
 // h2.appendChild(document.createTextNode('OMID'))
 
-// const oldHeading = document.querySelector('#heading')
-// const parent = oldHeading.parentElement
+const oldHeading = document.querySelector('#heading')
+const parent = oldHeading.parentElement
 
 // // replace 
 // parent.replaceChild(h2, oldHeading)
@@ -363,3 +363,55 @@
 // links[0].remove() // remove first link
 // links[2].remove() // remove 3th link
 
+// // event listner
+
+// const clearCardBtn = document.querySelector('#clear-cart')
+// clearCardBtn.addEventListener('click', clearCard)
+
+
+// function clearCard(event){
+//     if (event.target.text == 'پاک کردن'){
+//         console.log(event.target.text = 'پاک شد')
+//     }
+//     else if (event.target.text == 'پاک شد') {
+//         console.log(event.target.text = 'پاک کردن')
+//     }
+// }
+
+
+// some mouse event
+// click
+// clearCardBtn.addEventListener('click', printEvent)
+
+// double click
+// clearCardBtn.addEventListener('dblclick', printEvent)
+
+// mouse up
+// clearCardBtn.addEventListener('mouseup', printEvent)
+
+// mouse down
+// clearCardBtn.addEventListener('mousedown', printEvent)
+
+
+
+
+// function printEvent(e){
+// 	console.log(`EVENT IS ${e.type}`)
+// }
+
+// // local storage
+
+// // for add item to local storage
+localStorage.setItem('course0', 'python course')
+localStorage.setItem('course1', 'javasript course')
+localStorage.setItem('course2', 'react course')
+// // also there is a point we should use uniq key
+
+// // for remove item from local storage
+localStorage.removeItem('course0')
+
+// // for get local storage item
+console.log(localStorage.getItem('course1'))
+
+// // clear local storage 
+localStorage.clear()
